@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>alexe1 - My Games</title>
+</head>
+
+<body style="background-color: #480CA8;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-gradient sticky-top" style="background-color: #560BAD;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="nav-logo" src="../imgs/onlyLogo.png"
+                    alt="alexe1's logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-left-side">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="games.html">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="d-flex navbar-nav nav-right-side">
+                    <li class="nav-item"><a href="https://github.com/alexxe1" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg></a></li>
+                    <li class="nav-item"><a href="https://play.google.com/store/apps/dev?id=6894155375945307231"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                                class="bi bi-google-play" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                            </svg></a></li>
+                    <li class="nav-item"><a href="https://alexe1.itch.io/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                                class="bi bi-shop-window" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
+                            </svg></a></li>
+                    <li class="nav-item"><a href="https://gamejolt.com/@alexe_1" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                                class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                            </svg></a></li>
+                    <li class="nav-item"><a href="https://twitter.com/alexe1dev" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- My Games -->
+    <div class="bg-gradient" style="background-color: #480CA8; padding: 2em;">
+        <article class="games-container">
+            <!-- Professional projects -->
+            <section>
+                <h1 class="titles">Professional projects</h1>
+                <h2 class="subtitles">These are projects that I made with a professional approach in mind.</h2>
+                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                    <!-- Krypto -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="kryptoCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#kryptoCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#kryptoCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#kryptoCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#kryptoCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/krypto/kryptoPortrait.jpg" class="d-block w-100"
+                                        alt="Krypto Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/krypto/krypto1.png" class="d-block w-100"
+                                        alt="Krypto Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/krypto/krypto2.png" class="d-block w-100"
+                                        alt="Krypto Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/krypto/krypto3.png" class="d-block w-100"
+                                        alt="Krypto Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#kryptoCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#kryptoCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Krypto</h1>
+                            <p class="card-text">Add, subtract, divide and multiply your four cards to get the result in
+                                this
+                                casual game.</p>
+                            <p>Develop year: 2022<br>Release year: 2022<br>Engine: Unity 2D<br>State: Finished with
+                                updates<br>Platforms:
+                                Android, HTML5, Windows, Mac, Linux</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.alexe1dev.Krypto" target="_blank"
+                                class="btn btn-success"><i
+                                    class="bi bi-google-play card-download-icon"></i>PlayStore</a>
+                            <a href="https://alexe1.itch.io/krypto" target="_blank" class="btn btn-danger"><i
+                                    class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                    <!-- The Noris Project -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="tnpCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#tnpCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#tnpCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#tnpCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#tnpCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#tnpCarousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#tnpCarousel" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#tnpCarousel" data-bs-slide-to="6"
+                                    aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/thenorisproject/theNorisProjectPortrait.png" class="d-block w-100"
+                                        alt="The Noris Project Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe class="d-block w-100" width="560" height="315"
+                                        src="https://www.youtube-nocookie.com/embed/9yHIuUu4nus?si=LNCU9GO008w89uDE?html5=1"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/thenorisproject/theNorisProject1.png" class="d-block w-100"
+                                        alt="The Noris Project Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/thenorisproject/theNorisProject2.png" class="d-block w-100"
+                                        alt="The Noris Project Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/thenorisproject/theNorisProject3.png" class="d-block w-100"
+                                        alt="The Noris Project Picture 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/thenorisproject/theNorisProject4.png" class="d-block w-100"
+                                        alt="The Noris Project Picture 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/thenorisproject/theNorisProject5.png" class="d-block w-100"
+                                        alt="The Noris Project Picture 5">
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#tnpCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#tnpCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">The Noris Project</h1>
+                            <p class="card-text">Survive three nights in a merciless project!
+                            </p>
+                            <p>Develop year: 2022<br>Release year: 2023<br>Engine: Unity 3D<br>State:
+                                Finished<br>Platforms: Windows, Mac,
+                                Linux</p>
+                            <a href="https://alexe1.itch.io/the-noris-project" target="_blank" class="btn btn-danger"><i
+                                    class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Personal projects -->
+            <section>
+                <h1 class="titles" style="text-align: center;">Personal projects</h1>
+                <h2 class="subtitles">These are projects that I made with the objective of learning and exploring
+                    different mechanics or researching a specific field.</h2>
+                <div class="d-flex align-items-center justify-content-center flex-wrap ">
+                    <!-- UNLaM Diagram Creator -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="unlamCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#unlamCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#unlamCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#unlamCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#unlamCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/unlam/unlamPortrait.jpg" class="d-block w-100"
+                                        alt="UNLaM Diagram Creator Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/unlam/unlam1.png" class="d-block w-100" alt="UNLaM Diagram Creator Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/unlam/unlam2.png" class="d-block w-100" alt="UNLaM Diagram Creator Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/unlam/unlam3.png" class="d-block w-100" alt="UNLaM Diagram Creator Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#unlamCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#unlamCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">UNLaM Diagram Creator</h1>
+                            <p class="card-text">Quickly create different programming diagrams using the UNLaM specific
+                                diagram standard.</p>
+                            <p>Develop year: 2023<br>Release year: Not released<br>Engine: Unity 2D<br>State:
+                                Canceled<br>Platforms: Windows
+                            </p>
+                            <a href="https://alexe1.itch.io/unlam-diagram-creator?password=alexe1" target="_blank"
+                                class="btn btn-danger"><i class="bi bi-shop-window card-download-icon"></i>Itch.io
+                                (unstable preview)</a>
+                        </div>
+                    </div>
+
+                    <!-- Pixly Platformer Creator -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="pixlyCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#pixlyCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#pixlyCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#pixlyCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/pixly/pixlyPortrait.png" class="d-block w-100"
+                                        alt="Pixly Platformer Creator Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pixly/pixly1.png" class="d-block w-100"
+                                        alt="Pixly Platformer Creator Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pixly/pixly2.png" class="d-block w-100"
+                                        alt="Pixly Platformer Creator Picture 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#pixlyCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#pixlyCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Pixly Platformer Creator</h1>
+                            <p class="card-text">Create your own platformer levels using images and play them or share
+                                it with your friends!</p>
+                            <p>Develop year: 2022<br>Release year: 2022<br>Engine: Unity 2D<br>State:
+                                Finished<br>Platforms: Windows, Mac,
+                                Linux</p>
+                            <a href="https://alexe1.itch.io/pixlyplatformercreator" target="_blank"
+                                class="btn btn-danger"><i class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                    <!-- 3D Pac-Man -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="pacmanCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/3dpacman/3dpacmanPortrait.jpg" class="d-block w-100"
+                                        alt="3D Pac-Man Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/3dpacman/3dpacman1.png" class="d-block w-100"
+                                        alt="3D Pac-Man Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/3dpacman/3dpacman2.png" class="d-block w-100"
+                                        alt="3D Pac-Man Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/3dpacman/3dpacman3.png" class="d-block w-100"
+                                        alt="3D Pac-Man Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#pacmanCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#pacmanCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">3D Pac-Man (Clone)</h1>
+                            <p class="card-text">What does Pac-Man see while it tries to eat all the pellets? Now you
+                                can experience it in this first person 3D Pac-Man clone!</p>
+                            <p>Develop year: 2022<br>Release year: Not released<br>Engine: Unity 3D<br>State:
+                                Finished<br>Platforms: Windows
+                            </p>
+                            <a href="https://alexe1.itch.io/3d-pac-man?password=alexe1" target="_blank"
+                                class="btn btn-danger"><i class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                    <!-- Pixeltron 3000 -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="pixeltronCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#pixeltronCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#pixeltronCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#pixeltronCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#pixeltronCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/pixeltron/pixeltronPortrait.png" class="d-block w-100"
+                                        alt="Pixeltron 3000 Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pixeltron/pixeltron1.png" class="d-block w-100"
+                                        alt="Pixeltron 3000 Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pixeltron/pixeltron2.png" class="d-block w-100"
+                                        alt="Pixeltron 3000 Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pixeltron/pixeltron3.png" class="d-block w-100"
+                                        alt="Pixeltron 3000 Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#pixeltronCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#pixeltronCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Pixeltron 3000 (Clone)</h1>
+                            <p class="card-text">Be the best chef in this Club Penguin's Pizzatron pixel-art clone!</p>
+                            <p>Develop year: 2022<br>Release year: 2022<br>Engine: Unity 2D<br>State:
+                                Finished<br>Platforms: HTML5</p>
+                            <a href="https://gamejolt.com/games/pixeltron/721408" target="_blank"
+                                class="btn btn-success"><i
+                                    class="bi bi-lightning-fill card-download-icon"></i>GameJolt</a>
+                        </div>
+                    </div>
+
+                    <!-- Club Penguin 3D -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="clubpenguinCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#clubpenguinCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#clubpenguinCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#clubpenguinCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#clubpenguinCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/3dclubpenguin/clubPenguinPortrait.jpg" class="d-block w-100"
+                                        alt="Club Penguin 3D Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/3dclubpenguin/clubPenguin1.png" class="d-block w-100"
+                                        alt="Club Penguin 3D Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/3dclubpenguin/clubPenguin2.png" class="d-block w-100"
+                                        alt="Club Penguin 3D Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/3dclubpenguin/clubPenguin3.png" class="d-block w-100"
+                                        alt="Club Penguin 3D Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#clubpenguinCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#clubpenguinCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">3D Club Penguin</h1>
+                            <p class="card-text">Chat and mess around with your friends in this closed server 3D Club
+                                Penguin clone! (Follow the instructions to host your server properly!)</p>
+                            <p>Develop year: 2022<br>Release year: Not released<br>Engine: Unity 3D<br>State:
+                                Finished<br>Platforms: Windows</p>
+                            <a href="https://alexe1.itch.io/3d-club-penguin?password=alexe1" target="_blank"
+                                class="btn btn-danger"><i class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                    <!-- Angry Birds Level Maker -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="angrybirdsCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#angrybirdsCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#angrybirdsCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#angrybirdsCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#angrybirdsCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#angrybirdsCarousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/angrybirds/angrybirdsPortrait.jpg" class="d-block w-100"
+                                        alt="Angry Birds Level Maker Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/angrybirds/angrybirds1.png" class="d-block w-100"
+                                        alt="Angry Birds Level Maker Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/angrybirds/angrybirds2.png" class="d-block w-100"
+                                        alt="Angry Birds Level Maker Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/angrybirds/angrybirds3.png" class="d-block w-100"
+                                        alt="Angry Birds Level Maker Picture 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/angrybirds/angrybirds4.png" class="d-block w-100"
+                                        alt="Angry Birds Level Maker Picture 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#angrybirdsCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#angrybirdsCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Angry Birds Level Maker (Clone)</h1>
+                            <p class="card-text">Have you ever wanted to create your own Angry Birds levels? Try this
+                                simple but funny Angry Birds pixel-art level creator!</p>
+                            <p>Develop year: 2022<br>Release year: Not released<br>Engine: Unity 2D<br>State:
+                                Finished<br>Platforms: HTML5</p>
+                            <a href="https://alexe1.itch.io/angry-birds-level-maker?password=alexe1" target="_blank"
+                                class="btn btn-danger"><i class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                    <!-- Bomberman -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="bombermanCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#bombermanCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#bombermanCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#bombermanCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#bombermanCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/bomberman/bombermanPortrait.jpg" class="d-block w-100"
+                                        alt="Bomberman Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/bomberman/bomberman1.png" class="d-block w-100"
+                                        alt="Bomberman Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/bomberman/bomberman2.png" class="d-block w-100"
+                                        alt="Bomberman Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/bomberman/bomberman3.png" class="d-block w-100"
+                                        alt="Bomberman Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#bombermanCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#bombermanCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Bomberman (Clone)</h1>
+                            <p class="card-text">Plant bombs or run from them! Compete with your friend in this frenetic
+                                maze-based Bomberman clone!</p>
+                            <p>Develop year: 2022<br>Release year: Not released<br>Engine: Unity 2D<br>State:
+                                Finished<br>Platforms: Windows</p>
+                            <a href="https://alexe1.itch.io/bomberman?password=alexe1" target="_blank"
+                                class="btn btn-danger"><i class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                    <!-- PvZ -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="pvzCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#pvzCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#pvzCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#pvzCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#pvzCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/pvz/pvzPortrait.jpg" class="d-block w-100"
+                                        alt="Plants vs. Zombies Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pvz/pvz1.png" class="d-block w-100"
+                                        alt="Plants vs. Zombies Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pvz/pvz2.png" class="d-block w-100"
+                                        alt="Plants vs. Zombies Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/pvz/pvz3.png" class="d-block w-100"
+                                        alt="Plants vs. Zombies Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#pvzCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#pvzCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Plants vs. Zombies (Clone)</h1>
+                            <p class="card-text">Defend and attack the garden in this Plants vs. Zombies pixel-art
+                                clone!</p>
+                            <p>Develop year: 2021<br>Release year: Not released<br>Engine: Unity 2D<br>State:
+                                Finished<br>Platforms: Windows</p>
+                            <a href="https://alexe1.itch.io/plants-vs-zombies?password=alexe1" target="_blank"
+                                class="btn btn-danger"><i class="bi bi-shop-window card-download-icon"></i>Itch.io</a>
+                        </div>
+                    </div>
+
+                    <!-- Super Rocket Adventure -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="rocketCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#rocketCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#rocketCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#rocketCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#rocketCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/superrocketadventure/rocketPortrait.png" class="d-block w-100"
+                                        alt="Super Rocket Adventure Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/superrocketadventure/rocket1.jpg" class="d-block w-100"
+                                        alt="Super Rocket Adventure Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/superrocketadventure/rocket2.png" class="d-block w-100"
+                                        alt="Super Rocket Adventure Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/superrocketadventure/rocket3.png" class="d-block w-100"
+                                        alt="Super Rocket Adventure Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#rocketCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#rocketCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Super Rocket Adventure</h1>
+                            <p class="card-text">Defend your planet in this pixel-art space game! Achieve the highest
+                                score or compete against your friends!</p>
+                            <p>Develop year: 2017<br>Release year: 2017<br>Engine: Game Maker Studio<br>State:
+                                Finished<br>Platforms: Windows</p>
+                            <a href="https://gamejolt.com/games/EliAlexei/276206" target="_blank"
+                                class="btn btn-success"><i
+                                    class="bi bi-lightning-fill card-download-icon"></i>GameJolt</a>
+                        </div>
+                    </div>
+
+                    <!-- Super 2D Pac-Man -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="superpacCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#superpacCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#superpacCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#superpacCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#superpacCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/2dpacman/2dpacmanPortrait.png" class="d-block w-100"
+                                        alt="Super 2D Pac-Man Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/2dpacman/2dpacman1.png" class="d-block w-100"
+                                        alt="Super 2D Pac-Man Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/2dpacman/2dpacman2.png" class="d-block w-100"
+                                        alt="Super 2D Pac-Man Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/2dpacman/2dpacman3.png" class="d-block w-100"
+                                        alt="Super 2D Pac-Man Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#superpacCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#superpacCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Super 2D Pac-Man</h1>
+                            <p class="card-text">Play the classic Pac-Man singleplayer or compete against your friend
+                                controlling whether Pac-Man or the ghosts!</p>
+                            <p>Develop year: 2017<br>Release year: 2017<br>Engine: Game Maker Studio<br>State:
+                                Finished<br>Platforms: Windows</p>
+                            <a href="https://gamejolt.com/games/Super2DPacman/265595" target="_blank"
+                                class="btn btn-success"><i
+                                    class="bi bi-lightning-fill card-download-icon"></i>GameJolt</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal projects -->
+            <section>
+                <h1 class="titles" style="text-align: center;">Contributions</h1>
+                <h2 class="subtitles">These are projects that I've contributed to in some way.</h2>
+                <div class="d-flex align-items-center justify-content-center flex-wrap ">
+                    <!-- Waka Waka Reloaded -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="wakawakaCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#wakawakaCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#wakawakaCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#wakawakaCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#wakawakaCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/wakawaka/wakawakaPortrait.png" class="d-block w-100"
+                                        alt="Waka Waka Reloaded Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/wakawaka/wakawaka1.png" class="d-block w-100"
+                                        alt="Waka Waka Reloaded Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/wakawaka/wakawaka2.png" class="d-block w-100"
+                                        alt="Waka Waka Reloaded Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/wakawaka/wakawaka3.jpg" class="d-block w-100"
+                                        alt="Waka Waka Reloaded Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#wakawakaCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#wakawakaCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Waka Waka Reloaded</h1>
+                            <p class="card-text">A Pac-Man clone made in Flash, published on Facebook by MindJolt and
+                                MetroGames. Those companies behind this game doesn't exist anymore. However, I figured
+                                out a way of preserving the original .swf and turned it into a .exe application. Both of
+                                them are available in the link below.</p>
+                            <p>
+                            </p>
+                            <a href="https://gamejolt.com/games/waka-waka-reloaded/605458" target="_blank"
+                                class="btn btn-danger"><i
+                                    class="bi bi-lightning-fill card-download-icon"></i>GameJolt</a>
+                        </div>
+                    </div>
+
+                    <!-- Biotronic -->
+                    <div class="card shadow m-2" style="width: 25rem;">
+                        <div id="biotronicCarousel" class="carousel slide card-img-top" data-bs-interval="false"
+                            data-ride="carousel" data-pause="hover">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#biotronicCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#biotronicCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#biotronicCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#biotronicCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../imgs/biotronic/biotronicPortrait.png" class="d-block w-100"
+                                        alt="Biotronic Portrait">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/biotronic/biotronic1.png" class="d-block w-100"
+                                        alt="Biotronic Picture 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/biotronic/biotronic2.png" class="d-block w-100"
+                                        alt="Biotronic Picture 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imgs/biotronic/biotronic3.png" class="d-block w-100"
+                                        alt="Biotronic Picture 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#biotronicCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#biotronicCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Biotronic</h1>
+                            <p class="card-text">A Bejeweled clone made in Flash, published on Facebook by MindJolt and
+                                MetroGames. Those companies behind this game doesn't exist anymore. However, I figured
+                                out a way of preserving the original .swf and turned it into a .exe application. The
+                                game is available in the link below.</p>
+                            <p>
+                            </p>
+                            <a href="https://gamejolt.com/games/biotronic/474922" target="_blank"
+                                class="btn btn-danger"><i
+                                    class="bi bi-lightning-fill card-download-icon"></i>GameJolt</a>
+                        </div>
+                    </div>
+            </section>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
