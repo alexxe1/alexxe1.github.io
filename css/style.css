@@ -66,3 +66,9 @@
 .card-download-icon{
     margin-right: 0.5em;
 }
+
+.custom-icon {
+    padding: 0 !important;
+    margin: 0;
+    box-sizing: content-box;
+}
