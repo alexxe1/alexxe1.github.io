@@ -72,3 +72,19 @@
     margin: 0;
     box-sizing: content-box;
 }
+
+.translate-div {
+    position: fixed;
+    bottom: 0.75em;
+    right: 1em;
+    z-index: 1;
+}
+
+.translate-button{
+    background-color: #340b75;
+}
+
+.translate-icon{
+    z-index: 2;
+    width: 2em;
+}
