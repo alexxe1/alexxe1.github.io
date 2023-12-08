@@ -5,7 +5,7 @@ var langArray = [];
 var age = 0
 
 document.addEventListener("DOMContentLoaded", function () {
-    age = calculateAge(new Date(2004, 11, 8))
+    age = calculateAge("2004-11-08")
     loadLang()
 })
 
@@ -106,9 +106,25 @@ function manualTranslation() {
     translateText()
 }
 
-function calculateAge(dob) {
-    var diff_ms = Date.now() - dob.getTime();
-    var age_dt = new Date(diff_ms);
-
-    return Math.abs(age_dt.getUTCFullYear() - 1970);
-}
+function calculateAge(birthdate) {
+    // Parse the birthdate string to a Date object
+    const birthDateObj = new Date(birthdate);
+  
+    // Get the current date
+    const currentDate = new Date();
+  
+    // Calculate the difference in years
+    const age = currentDate.getFullYear() - birthDateObj.getFullYear();
+  
+    // Check if the birthday has already occurred this year
+    const hasBirthdayOccurred = (
+      currentDate.getMonth() > birthDateObj.getMonth() ||
+      (currentDate.getMonth() === birthDateObj.getMonth() && currentDate.getDate() >= birthDateObj.getDate())
+    );
+  
+    // Adjust the age based on whether the birthday has occurred
+    const finalAge = hasBirthdayOccurred ? age : age - 1;
+  
+    return finalAge;
+  }
+  
