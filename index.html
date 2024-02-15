@@ -1,123 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/general.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Home of alexe1's official webpage!">
-    <meta name="keywords" content="alexxe1, alexe1, alexe1dev">
-    <meta name="author" content="alexe1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="uYeu_ohV5J1TSukIxXgyA-i6fLO-pMrc4fwp9UvhZ70" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="../css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>alexe1 - Home</title>
-</head>
-
-<body style="background-color: #480CA8;">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-gradient sticky-top" style="background-color: #560BAD;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="nav-logo" src="../imgs/onlyLogo.png"
-                    alt="alexe1's logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-left-side">
-                    <li class="nav-item">
-                        <a class="nav-link home-link active" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link projects-link" aria-current="page" href="html/games.html">My projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contact-link" href="html/contact.html">Contact</a>
-                    </li>
-                </ul>
-                <ul class="d-flex navbar-nav nav-right-side">
-                    <li class="nav-item"><a href="https://github.com/alexxe1" target="_blank"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg></a></li>
-                    <li class="nav-item"><a href="https://play.google.com/store/apps/dev?id=6894155375945307231"
-                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
-                                class="bi bi-google-play" viewBox="0 0 16 16">
-                                <path
-                                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
-                            </svg></a></li>
-                    <li class="nav-item">
-                        <a href="https://alexe1.itch.io/" target="_blank">
-                            <img src="../imgs/marketing/itchio.png">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://gamejolt.com/@alexe_1" target="_blank">
-                            <img src="../imgs/marketing/gamejolt.png">
-                        </a>
-                    </li>
-                    <li class="nav-item"><a href="https://twitter.com/alexe1dev" target="_blank"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
-                                class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-                            </svg></a></li>
-                    <li class="nav-item"><a href="https://www.tiktok.com/@alexe1dev" target="_blank"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
-                                class="bi bi-tiktok" viewBox="0 0 16 16">
-                                <path
-                                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
-                            </svg></a></li>
-                    <li class="nav-item"><a href="https://www.youtube.com/@alexe1dev" target="_blank"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
-                                class="bi bi-youtube" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
-                            </svg></a></li>
-                </ul>
-            </div>
-        </div>
+    <title>Alexxe1</title>
+  </head>
+  <body>
+    <nav>
+      <a href="https://alexe1.itch.io/" target="_blank" class="nav__a games"
+        >Games</a
+      >
+      <a href="#home"><img src="assets/alexxei_icon.png" id="home__image" /></a>
+      <a href="#about" class="nav__a about">About</a>
     </nav>
 
-    <!-- About me -->
-    <div class="d-flex align-items-center justify-content-center bg-gradient" style="background-color: #480CA8;">
-        <img class="content-logo d-none d-lg-block" src="imgs/logoAndText.png">
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <img class="content-logo d-lg-none" src="imgs/logoAndText.png">
-            <h1 class="titles about-title">About me</h1>
-            <p class="text-content about-text">Hi! I'm Elías Torczuk, I'm from Argentina and I develop video games
-                as a hobby!<br>
-                I've been developing video games since 2016 (12 years old) using Game Maker Studio.<br>However, I mainly
-                use
-                Unity nowadays. Even if videogames are the kind of projects I love the most, webpages might also be
-                found in
-                my projects list (like this one).<br>This webpage's intention is to show and keep track of all my
-                projects.
-                Whether I consider some of them professional or not, I strongly believe they really helped me along in
-                this
-                development journey.
-                <br>Enjoy!
-            </p>
+    <main id="home">
+      <div class="home__buttons">
+        <a href="#contact" class="home__buttons__contact">
+          <img src="assets/contact-icon.png" alt="contact" />
+          <span>Contact</span>
+        </a>
+
+        <a
+          href="https://alexe1.itch.io/"
+          target="_blank"
+          class="home__buttons__games"
+        >
+          <img src="assets/games-icon.png" alt="games" />
+          <span>Games</span>
+        </a>
+
+        <a href="#about" class="home__buttons__about">
+          <img src="assets/about-icon.png" alt="about" />
+          <span>About</span>
+        </a>
+      </div>
+    </main>
+
+    <section id="about">
+      <div class="about__about-me">
+        <div class="about__about-me__info">
+          <h2>About me</h2>
+          <p>
+            My name is <b>Elías Torczuk</b>, but my developer name is
+            <b>alexe1</b>.
+          </p>
+          <p>
+            I develop <b>video games</b> as a hobby since <b>2016</b> (12 years
+            old).
+          </p>
         </div>
-    </div>
-    <div class="d-flex flex-column align-items-center justify-content-center" style="background-color: #480CA8; ">
-    </div>
 
-    <div class="container-fluid d-flex justify-content-end align-items-end fixed-bottom translate-div">
-        <button class="btn translate-button"><img class="translate-icon" src="imgs/lang/arg.png"
-                onclick=manualTranslation()></button>
-    </div>
+        <div class="about__about-me__engines">
+          <h2>Game Engines</h2>
+          <a target="_blank" href="https://godotengine.org/"
+            ><img class="godot" src="assets/godot.png" alt="godot engine"
+          /></a>
+          <a target="_blank" href="https://unity.com/es"
+            ><img class="unity" src="assets/unity.png" alt="unity"
+          /></a>
+        </div>
+      </div>
+    </section>
 
-    <script src="/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
+    <section id="contact">
+      <form
+        class="contact__form"
+        method="POST"
+        action="https://formsubmit.co/alexe1developer777@gmail.com"
+      >
+        <h2>Contact</h2>
 
+        <span class="contact__form__name"
+          ><img src="assets/name-icon.svg" alt="name" />
+          <input
+            required
+            maxlength="40"
+            type="text"
+            name="name"
+            id="contact__form__name"
+            placeholder="Name"
+        /></span>
+
+        <span class="contact__form__email"
+          ><img src="assets/email-icon.svg" alt="email" />
+          <input
+            required
+            type="email"
+            name="email"
+            id="contact__form__email"
+            placeholder="youremail@example.com"
+        /></span>
+
+        <span class="contact__form__info">
+          <textarea
+            required
+            name="information"
+            id="contact__form__info"
+            placeholder="Your text goes here..."
+          ></textarea>
+        </span>
+
+        <span class="contact__form__send">
+          <input type="submit" id="contact__form__send" value="" />
+          <img src="assets/send-icon.svg" alt="send" />
+        </span>
+      </form>
+    </section>
+
+    <footer>
+      <b class="footer__b">@alexe1 -</b>
+
+      <a href="https://www.tiktok.com/@alexe1dev" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="60"
+          width="52"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="#ffffff"
+            d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+          /></svg
+      ></a>
+
+      <a
+        href="https://youtube.com/@alexe1dev?si=DzMXsuR8Uv68Gb1C"
+        target="_blank"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="80"
+          width="80"
+          viewBox="0 0 576 512"
+        >
+          <path
+            fill="#ffffff"
+            d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+          />
+        </svg>
+      </a>
+
+      <a href="https://twitter.com/alexe1dev" target="_blank">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="70"
+          width="70"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="#ffffff"
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+          />
+        </svg>
+      </a>
+
+      <a
+        href="https://play.google.com/store/apps/dev?id=6894155375945307231"
+        target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="70"
+          width="70"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="#ffffff"
+            d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+          /></svg
+      ></a>
+    </footer>
+
+    <script src="js/code.js"></script>
+  </body>
 </html>
