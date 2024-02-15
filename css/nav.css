@@ -36,10 +36,10 @@ nav a {
   cursor: pointer;
 }
 
-.games {
+.nav__privacy {
   left: 250px;
 }
 
-.about {
+.nav__policy {
   left: -250px;
 }

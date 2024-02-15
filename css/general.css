@@ -15,7 +15,6 @@ textarea:focus {
 body {
   background-color: #000;
   margin: 0;
-  scroll-behavior: smooth;
   overflow: hidden;
 }
 
@@ -427,6 +426,10 @@ a:hover {
   .footer__b {
     color: transparent;
     position: absolute;
+  }
+
+  footer a {
+    margin-top: 12%;
   }
 
   /* Home */
