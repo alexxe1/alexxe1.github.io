@@ -9,5 +9,3 @@ function setSVGColor(e, color) {
 addEventListener("mouseover", (e) => setSVGColor(e, "#00ADB5"));
 
 addEventListener("mouseout", (e) => setSVGColor(e, "#ffffff"));
-
-

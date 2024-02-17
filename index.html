@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/general.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Home of alexe1's official webpage!" />
+    <meta name="keywords" content="alexxe1, alexe1, alexe1dev" />
+    <meta name="author" content="alexe1" />
+    <meta
+      name="google-site-verification"
+      content="uYeu_ohV5J1TSukIxXgyA-i6fLO-pMrc4fwp9UvhZ70"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>alexe1</title>
 
-    <title>Alexxe1</title>
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
-    <nav>
-      <a href="https://alexe1.itch.io/" target="_blank" class="nav__a games"
+    <nav id="nav">
+      <a class="nav__games" href="https://alexe1.itch.io/" target="_blank"
         >Games</a
       >
-      <a href="#home"><img src="assets/alexxei_icon.png" id="home__image" /></a>
-      <a href="#about" class="nav__a about">About</a>
+      <a href="#home"
+        ><img class="nav__image" src="assets/alexxei_icon.png" alt="home"
+      /></a>
+      <a class="nav__about" href="#about">About</a>
     </nav>
 
     <main id="home">
-      <div class="home__buttons">
-        <a href="#contact" class="home__buttons__contact">
+      <section class="home__buttons">
+        <a class="home__buttons__contact" href="#contact">
           <img src="assets/contact-icon.png" alt="contact" />
           <span>Contact</span>
         </a>
 
+        <a class="home__buttons__about" href="#about">
+          <img src="assets/about-icon.png" alt="about" />
+          <span>   &nbsp;About</span>
+        </a>
+
         <a
+          class="home__buttons__games"
           href="https://alexe1.itch.io/"
           target="_blank"
-          class="home__buttons__games"
         >
           <img src="assets/games-icon.png" alt="games" />
           <span>Games</span>
         </a>
-
-        <a href="#about" class="home__buttons__about">
-          <img src="assets/about-icon.png" alt="about" />
-          <span>About</span>
-        </a>
-      </div>
+      </section>
     </main>
 
     <section id="about">
-      <div class="about__about-me">
-        <div class="about__about-me__info">
-          <h2>About me</h2>
-          <p>
-            My name is <b>Elías Torczuk</b>, but my developer name is
-            <b>alexe1</b>.
-          </p>
-          <p>
-            I develop <b>video games</b> as a hobby since <b>2016</b> (12 years
-            old).
-          </p>
-        </div>
+      <article class="about__info">
+        <h2>About me</h2>
+        <p>
+          My name is <b>Elías Torczuk</b>, but my developer name is
+          <b>alexe1</b>.
+        </p>
+        <p>
+          I develop <b>video games</b> as a hobby since <b>2016</b> (12 years
+          old).
+        </p>
+      </article>
 
-        <div class="about__about-me__engines">
-          <h2>Game Engines</h2>
-          <a target="_blank" href="https://godotengine.org/"
-            ><img class="godot" src="assets/godot.png" alt="godot engine"
+      <article class="about__engines">
+        <h2>Game Engines</h2>
+        <div class="about__engines__group">
+          <a href="https://godotengine.org/" target="_blank"
+            ><img src="assets/godot.png" alt="godot"
           /></a>
-          <a target="_blank" href="https://unity.com/es"
-            ><img class="unity" src="assets/unity.png" alt="unity"
+
+          <a href="https://unity.com/es" target="_blank"
+            ><img src="assets/unity.png" alt="unity"
           /></a>
         </div>
-      </div>
+      </article>
     </section>
 
     <section id="contact">
@@ -78,32 +85,30 @@
       >
         <h2>Contact</h2>
 
-        <span class="contact__form__name"
-          ><img src="assets/name-icon.svg" alt="name" />
+        <span id="contact__form__name">
+          <img src="assets/name-icon.svg" alt="name" />
           <input
             required
             maxlength="40"
             type="text"
             name="name"
-            id="contact__form__name"
+            
             placeholder="Name"
         /></span>
 
-        <span class="contact__form__email"
+        <span id="contact__form__email"
           ><img src="assets/email-icon.svg" alt="email" />
           <input
             required
             type="email"
             name="email"
-            id="contact__form__email"
-            placeholder="youremail@example.com"
+            placeholder="Email"
         /></span>
 
-        <span class="contact__form__info">
+        <span id="contact__form__info">
           <textarea
             required
             name="information"
-            id="contact__form__info"
             placeholder="Your text goes here..."
           ></textarea>
         </span>
@@ -115,14 +120,17 @@
       </form>
     </section>
 
-    <footer>
-      <b class="footer__b">@alexe1 -</b>
+    <footer id="footer">
+      <b class="footer__text">@alexe1 -</b>
 
-      <a href="https://www.tiktok.com/@alexe1dev" target="_blank"
+      <a
+        class="footer__media"
+        href="https://www.tiktok.com/@alexe1dev"
+        target="_blank"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
-          height="60"
-          width="52"
+          height="50"
+          width="42"
           viewBox="0 0 448 512"
         >
           <path
@@ -134,11 +142,12 @@
       <a
         href="https://youtube.com/@alexe1dev?si=DzMXsuR8Uv68Gb1C"
         target="_blank"
+        class="footer__media"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          height="80"
-          width="80"
+          height="70"
+          width="70"
           viewBox="0 0 576 512"
         >
           <path
@@ -148,11 +157,15 @@
         </svg>
       </a>
 
-      <a href="https://twitter.com/alexe1dev" target="_blank">
+      <a
+        class="footer__media"
+        href="https://twitter.com/alexe1dev"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          height="70"
-          width="70"
+          height="60"
+          width="60"
           viewBox="0 0 512 512"
         >
           <path
@@ -163,12 +176,13 @@
       </a>
 
       <a
+        class="footer__media"
         href="https://play.google.com/store/apps/dev?id=6894155375945307231"
         target="_blank"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
-          height="70"
-          width="70"
+          height="60"
+          width="60"
           viewBox="0 0 512 512"
         >
           <path
@@ -177,7 +191,8 @@
           /></svg
       ></a>
     </footer>
+  </body>
 
-    <script src="js/code.js"></script>
+    <script src="../js/code.js"></script>
   </body>
 </html>
