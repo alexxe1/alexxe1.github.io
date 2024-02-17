@@ -73,7 +73,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 22vw;
     height: 32vh;
     background-color: #000;
@@ -83,11 +82,14 @@ a:hover {
   .home__buttons img {
     width: auto;
     height: 50%;
+    align-self: flex-end;
+    margin: 1vw;
   }
 
   .home__buttons span {
     font-size: 4vw;
     font-family: normal;
+    margin: 1vw;
   }
 
   #home a:hover {
@@ -329,6 +331,10 @@ a:hover {
     height: 70px;
   }
 
+  #contact__form__send:hover {
+    cursor: pointer;
+  }
+
   #contact__form__name,
   #contact__form__email,
   #contact__form__info {
@@ -396,11 +402,14 @@ a:hover {
   .home__buttons img {
     width: auto;
     height: 50%;
+    align-self: center;
+    margin: 0;
   }
 
   .home__buttons span {
     font-size: 4vw;
     font-family: normal;
+    margin: 0;
   }
 
   #home a:hover {
