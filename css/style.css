@@ -308,6 +308,11 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
+    transition: transform .1s;
+  }
+
+  .contact__form__send:hover {
+    transform: scale(1.2);
   }
 
   .contact__form__send img {
@@ -617,6 +622,11 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
+    transition: transform .1s;
+  }
+
+  .contact__form__send:hover {
+    transform: scale(1.2);
   }
 
   .contact__form__send img {
@@ -920,6 +930,11 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
+    transition: transform .1s;
+  }
+
+  .contact__form__send:hover {
+    transform: scale(1.2);
   }
 
   .contact__form__send img {
@@ -1081,6 +1096,7 @@ a:hover {
   .footer__text {
     color: transparent;
     position: absolute;
+    z-index: -1000;
   }
 
   .footer__media {
@@ -1229,6 +1245,7 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
+    transition: transform .1s;
   }
 
   .contact__form__send img {
@@ -1243,6 +1260,10 @@ a:hover {
     z-index: 200;
     width: 70px;
     height: 70px;
+  }
+
+  .contact__form__send:hover {
+    transform: scale(1.2);
   }
 
   #contact__form__name,
@@ -1356,7 +1377,8 @@ a:hover {
 
   .nav__games,
   .nav__about {
-    z-index: -100;
+    z-index: -1000;
+    font-size: 0;
     position: absolute;
     color: transparent;
   }
@@ -1384,6 +1406,7 @@ a:hover {
   .footer__text {
     color: transparent;
     position: absolute;
+    z-index: -1000;
   }
 
   .footer__media {
