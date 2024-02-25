@@ -8,8 +8,7 @@ body {
 /* Nav */
 
 .nav__image {
-  width: 10em;
-  margin: 0;
+  width: 9em;
 }
 
 /* main */
@@ -36,10 +35,4 @@ p {
 h2 {
   font-family: bold;
   font-size: 3em;
-}
-
-@media only screen and (max-width: 612px) {
-  .nav__image {
-    width: 11em;
-  }
 }
