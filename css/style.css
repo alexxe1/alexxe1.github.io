@@ -183,11 +183,11 @@ a:hover {
 
   .about__info {
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
   }
 
   .about__info h2 {
@@ -198,48 +198,12 @@ a:hover {
   }
 
   .about__info p {
-    width: 80%;
+    width: 30%;
     font-size: 1.6rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
-  }
-
-  /* About Engines */
-
-  .about__engines {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about__engines h2 {
-    font-size: 4vw;
-    font-family: bold;
-    margin: 0;
-    margin-top: 6vh;
-    color: #000;
-  }
-
-  /* About Engines Group */
-
-  .about__engines__group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 17vh;
-  }
-
-  .about__engines__group a img {
-    width: 15em;
-    height: auto;
-    transition: transform 0.1s;
-  }
-
-  .about__engines__group a img:hover {
-    transform: scale(1.1);
   }
 
   /* Contact */
@@ -269,8 +233,8 @@ a:hover {
   }
 
   .contact__form img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
   }
 
@@ -310,7 +274,7 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
-    transition: transform .1s;
+    transition: transform 0.1s;
   }
 
   .contact__form__send:hover {
@@ -508,7 +472,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
   }
 
   .about__info h2 {
@@ -519,48 +482,12 @@ a:hover {
   }
 
   .about__info p {
-    width: 80%;
+    width: 50%;
     font-size: 1.6rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
-  }
-
-  /* About Engines */
-
-  .about__engines {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about__engines h2 {
-    font-size: 6vw;
-    font-family: bold;
-    margin: 0;
-    margin-top: 6vh;
-    color: #000;
-  }
-
-  /* About Engines Group */
-
-  .about__engines__group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20vh;
-  }
-
-  .about__engines__group a img {
-    width: 15em;
-    height: auto;
-    transition: transform 0.1s;
-  }
-
-  .about__engines__group a img:hover {
-    transform: scale(1.1);
   }
 
   /* Contact */
@@ -631,7 +558,7 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
-    transition: transform .1s;
+    transition: transform 0.1s;
   }
 
   .contact__form__send:hover {
@@ -816,7 +743,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
   }
 
   .about__info h2 {
@@ -833,42 +759,6 @@ a:hover {
     margin: 0;
     line-height: 6vh;
     text-align: center;
-  }
-
-  /* About Engines */
-
-  .about__engines {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about__engines h2 {
-    font-size: 6vw;
-    font-family: bold;
-    margin: 0;
-    margin-top: 6vh;
-    color: #000;
-  }
-
-  /* About Engines Group */
-
-  .about__engines__group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20vh;
-  }
-
-  .about__engines__group a img {
-    width: 15em;
-    height: auto;
-    transition: transform 0.1s;
-  }
-
-  .about__engines__group a img:hover {
-    transform: scale(1.1);
   }
 
   /* Contact */
@@ -939,7 +829,7 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
-    transition: transform .1s;
+    transition: transform 0.1s;
   }
 
   .contact__form__send:hover {
@@ -1131,7 +1021,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
   }
 
   .about__info h2 {
@@ -1148,42 +1037,6 @@ a:hover {
     margin: 0;
     line-height: 6vh;
     text-align: center;
-  }
-
-  /* About Engines */
-
-  .about__engines {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about__engines h2 {
-    font-size: 6vw;
-    font-family: bold;
-    margin: 0;
-    margin-top: 6vh;
-    color: #000;
-  }
-
-  /* About Engines Group */
-
-  .about__engines__group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20vh;
-  }
-
-  .about__engines__group a img {
-    width: 15em;
-    height: auto;
-    transition: transform 0.1s;
-  }
-
-  .about__engines__group a img:hover {
-    transform: scale(1.1);
   }
 
   /* Contact */
@@ -1254,7 +1107,7 @@ a:hover {
     height: 70px;
     margin-bottom: 20vh;
     border-radius: 100%;
-    transition: transform .1s;
+    transition: transform 0.1s;
   }
 
   .contact__form__send img {
@@ -1427,6 +1280,7 @@ a:hover {
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
     margin-top: 100vh;
@@ -1441,7 +1295,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
   }
 
   .about__info h2 {
@@ -1452,48 +1305,12 @@ a:hover {
   }
 
   .about__info p {
-    width: 100%;
+    width: 99%;
     font-size: 1.6rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
-  }
-
-  /* About Engines */
-
-  .about__engines {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about__engines h2 {
-    font-size: 10vw;
-    font-family: bold;
-    margin: 0;
-    margin-top: 6vh;
-    color: #000;
-  }
-
-  /* About Engines Group */
-
-  .about__engines__group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20vh;
-  }
-
-  .about__engines__group a img {
-    width: 15em;
-    height: auto;
-    transition: transform 0.1s;
-  }
-
-  .about__engines__group a img:hover {
-    transform: scale(1.1);
   }
 
   /* Contact */
