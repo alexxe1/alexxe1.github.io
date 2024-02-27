@@ -75,7 +75,7 @@ a:hover {
     justify-content: center;
     width: 22vw;
     height: 32vh;
-    background-color: #000;
+    background-color: #222831;
     border-radius: 30px;
   }
 
@@ -105,13 +105,13 @@ a:hover {
   #nav {
     display: flex;
     position: fixed;
-    background-color: #000;
+    background-color: #222831;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .nav__games,
@@ -146,10 +146,10 @@ a:hover {
     align-items: center;
     width: 100vw;
     height: 18vh;
-    background-color: #000;
+    background-color: #222831;
     z-index: 1000;
     margin-top: 82vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .footer__privacy {
@@ -366,7 +366,7 @@ a:hover {
     align-items: center;
     width: 22vw;
     height: 32vh;
-    background-color: #000;
+    background-color: #222831;
     border-radius: 30px;
   }
 
@@ -396,13 +396,13 @@ a:hover {
   #nav {
     display: flex;
     position: fixed;
-    background-color: #000;
+    background-color: #222831;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .nav__games,
@@ -437,10 +437,10 @@ a:hover {
     align-items: center;
     width: 100vw;
     height: 18vh;
-    background-color: #000;
+    background-color: #222831;
     z-index: 1000;
     margin-top: 82vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .footer__privacy {
@@ -651,7 +651,7 @@ a:hover {
     align-items: center;
     width: 22vw;
     height: 32vh;
-    background-color: #000;
+    background-color: #222831;
     border-radius: 30px;
   }
 
@@ -678,13 +678,13 @@ a:hover {
   #nav {
     display: flex;
     position: fixed;
-    background-color: #000;
+    background-color: #222831;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .nav__games,
@@ -713,10 +713,10 @@ a:hover {
     align-items: center;
     width: 100vw;
     height: 18vh;
-    background-color: #000;
+    background-color: #222831;
     z-index: 1000;
     margin-top: 82vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .footer__privacy {
@@ -922,7 +922,7 @@ a:hover {
     align-items: center;
     width: 40vw;
     height: 20vh;
-    background-color: #000;
+    background-color: #222831;
     border-radius: 20px;
     text-align: center;
   }
@@ -950,7 +950,7 @@ a:hover {
     align-items: center;
     width: 85vw;
     height: 20vh;
-    background-color: #000;
+    background-color: #222831;
     border-radius: 20px;
     margin-top: -20vh;
   }
@@ -973,13 +973,13 @@ a:hover {
   #nav {
     display: flex;
     position: fixed;
-    background-color: #000;
+    background-color: #222831;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .nav__games,
@@ -1003,10 +1003,10 @@ a:hover {
     align-items: center;
     width: 100vw;
     height: 18vh;
-    background-color: #000;
+    background-color: #222831;
     z-index: 1000;
     margin-top: 82vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .footer__text {
@@ -1198,7 +1198,7 @@ a:hover {
     justify-content: center;
     width: 40vw;
     height: 20vh;
-    background-color: #000;
+    background-color: #222831;
     border-radius: 20px;
     text-align: center;
   }
@@ -1223,7 +1223,7 @@ a:hover {
     justify-content: center;
     width: 85vw;
     height: 20vh;
-    background-color: #000;
+    background-color: #222831;
     border-radius: 20px;
     margin-top: -20vh;
   }
@@ -1245,13 +1245,13 @@ a:hover {
   #nav {
     display: flex;
     position: fixed;
-    background-color: #000;
+    background-color: #222831;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .nav__games,
@@ -1276,10 +1276,10 @@ a:hover {
     align-items: center;
     width: 100vw;
     height: 18vh;
-    background-color: #000;
+    background-color: #222831;
     z-index: 1000;
     margin-top: 82vh;
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px #222831;
   }
 
   .footer__privacy {
