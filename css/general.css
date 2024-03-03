@@ -1,0 +1,49 @@
+/* GENERAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* LINKS */
+
+a:link {
+  text-decoration: none;
+  font-family: normal;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+/* VARIABLES & FONTS */
+
+:root {
+  --cyan: #00adb5;
+  --background: #222831;
+}
+
+@font-face {
+  font-family: bold;
+  src: url(fonts/bold.otf);
+}
+
+@font-face {
+  font-family: normal;
+  src: url(fonts/normal.otf);
+}
