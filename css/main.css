@@ -55,7 +55,7 @@
   }
 
   .footer__media {
-    margin: .5% 0.5% 0 0.5%;
+    margin: 0.5% 0.5% 0 0.5%;
   }
 
   /* Home =======================================================  */
@@ -1299,14 +1299,14 @@
   /* Footer =======================================================  */
   #footer {
     position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    z-index: 1000;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 15vh;
-    background-color: var(--background);
-    z-index: 1000;
-    margin-top: 85vh;
     box-shadow: 1px 1px 10px var(--background);
   }
 
@@ -1323,7 +1323,7 @@
 
   /* Home =======================================================  */
   #home {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -1395,14 +1395,13 @@
 
   /* About =======================================================  */
   #about {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 100vh;
-    overflow-y: scroll;
+    overflow: hidden;
   }
 
   .about__image {
@@ -1435,11 +1434,11 @@
 
   /* Contact =======================================================  */
   #contact {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin-top: 200vh;
+    overflow: hidden;
   }
 
   .contact__form {
@@ -1529,7 +1528,7 @@
 
   /* Games ======================================================= */
   #games {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1537,7 +1536,6 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 300vh;
     overflow-y: scroll;
   }
 
@@ -1561,15 +1559,18 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 38vh;
-    margin-bottom: 25vh;
+    margin-top: 28vh;
+    margin-bottom: 15vh;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: scroll;
   }
 
   .game {
+    position: relative;
     width: 80%;
-    height: 30%;
+    height: 150px;
     background-color: #000;
     border-radius: 10px;
     box-shadow: 0 0 8px var(--background);
