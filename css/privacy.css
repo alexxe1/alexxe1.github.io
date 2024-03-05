@@ -1,38 +1,44 @@
-/* General */
-
 body {
-  background-color: #fff;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
-/* Nav */
-
-.nav__image {
-  width: 9em;
+nav {
+  position: sticky;
+  width: 100vw;
+  height: 18vh;
+  z-index: 1000;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px var(--background);
 }
 
-/* main */
+nav img {
+  width: 8em;
+  height: auto;
+}
 
-main {
-  position: absolute;
+#privacy {
+  position: relative;
   margin-top: 20vh;
   width: 100vw;
 }
 
-p,
-h2 {
+#privacy p,
+#privacy h2 {
   position: relative;
   text-align: center;
   white-space: pre-line;
   padding: 5px;
 }
 
-p {
+#privacy p {
   font-family: normal;
   font-size: 2em;
 }
 
-h2 {
+#privacy h2 {
   font-family: bold;
   font-size: 3em;
 }
