@@ -36,14 +36,14 @@
   /* Footer =======================================================  */
   #footer {
     position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    z-index: 1000;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 15vh;
-    background-color: var(--background);
-    z-index: 1000;
-    margin-top: 85vh;
     box-shadow: 1px 1px 10px var(--background);
   }
 
@@ -55,12 +55,12 @@
   }
 
   .footer__media {
-    margin: 0.5% 0.5% 0 0.5%;
+    margin: 1.5% 2% 0 2%;
   }
 
   /* Home =======================================================  */
   #home {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -125,13 +125,12 @@
 
   /* About =======================================================  */
   #about {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 100vh;
     overflow-y: scroll;
   }
 
@@ -168,124 +167,111 @@
 
   /* Contact =======================================================  */
   #contact {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin-top: 200vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact__form {
+    width: 40%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    align-self: center;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 60vh;
-    background-color: #fff;
+    gap: 4vh;
   }
 
-  .contact__form h2 {
-    font-size: 0;
+  /* Contact WRAPPERS */
+
+  .contact__form__name,
+  .contact__form__email,
+  .contact__form__info,
+  .contact__form__send {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #0005;
   }
 
-  .contact__form img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-  }
-
-  .contact__form span {
+  .contact__form__name,
+  .contact__form__email {
+    width: 80%;
+    height: 10%;
     display: flex;
     align-items: center;
-    background-color: #eeeeee;
-    border-radius: 15px;
-    box-shadow: 0 0 3px var(--background);
-    margin: 10px;
   }
 
-  .contact__form span input,
-  .contact__form span textarea {
-    background-color: transparent;
-    border-color: transparent;
-    width: 100%;
+  .contact__form__info {
+    width: 80%;
+    height: 27%;
+    border: transparent;
     resize: none;
-    font-size: 20px;
-    color: #393e46;
-    font-family: normal;
-    padding: 10px;
-    overflow: auto;
-  }
-
-  .contact__form span textarea {
-    height: 69%;
-  }
-
-  .contact__form span input::placeholder,
-  .contact__form span textarea::placeholder {
-    font-family: bold;
-    color: #393e46aa;
-  }
-
-  .contact__form span textarea {
-    padding-top: 40px;
-  }
-
-  .contact__form__name {
-    width: 400px;
-    height: 60px;
   }
 
   .contact__form__send {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20vh;
-    border-radius: 100%;
-    transition: transform 0.1s;
+    width: 22%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Contact INPUTS/TEXTAREA */
+
+  .contact__form__name input,
+  .contact__form__email input {
+    width: 100%;
+    height: 100%;
+    color: #666666;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 3%;
+    font-family: bold;
+    font-size: 1.2rem;
+  }
+
+  .contact__form__info {
+    font-family: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #666666;
+  }
+
+  .contact__form__send input {
+    width: 21%;
+    height: 12%;
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  /* Contact IMAGES */
+
+  .contact__form__name img,
+  .contact__form__email img {
+    width: 2.3rem;
+    height: auto;
+    margin-left: 3%;
   }
 
   .contact__form__send img {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    z-index: 100;
-  }
-
-  #contact__form__send {
-    position: absolute;
-    z-index: 200;
-    width: 70px;
-    height: 70px;
-    transition: transform 0.1s;
-  }
-
-  .contact__form__send:hover,
-  #contact__form__send:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-
-  #contact__form__info {
-    height: 20vh;
-  }
-
-  #contact__form__name,
-  #contact__form__email,
-  #contact__form__info {
-    width: 26vw;
+    width: 3.8rem;
+    height: auto;
   }
 
   /* Games ======================================================= */
   #games {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 300vh;
     overflow-y: scroll;
   }
 
@@ -364,14 +350,14 @@
   /* Footer =======================================================  */
   #footer {
     position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    z-index: 1000;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 18vh;
-    background-color: var(--background);
-    z-index: 1000;
-    margin-top: 82vh;
     box-shadow: 1px 1px 10px var(--background);
   }
 
@@ -383,12 +369,12 @@
   }
 
   .footer__media {
-    margin: 1.5% 1% 0 1%;
+    margin: 1.5% 2% 0 2%;
   }
 
   /* Home =======================================================  */
   #home {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -448,13 +434,12 @@
 
   /* About =======================================================  */
   #about {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 100vh;
     overflow-y: scroll;
   }
 
@@ -490,115 +475,110 @@
 
   /* Contact =======================================================  */
   #contact {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin-top: 200vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact__form {
+    width: 40%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    align-self: center;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 60vh;
-    background-color: #fff;
+    gap: 4vh;
   }
 
-  .contact__form h2 {
-    font-size: 0;
+  /* Contact WRAPPERS */
+
+  .contact__form__name,
+  .contact__form__email,
+  .contact__form__info,
+  .contact__form__send {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #0005;
   }
 
-  .contact__form img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-  }
-
-  .contact__form span {
+  .contact__form__name,
+  .contact__form__email {
+    width: 80%;
+    height: 10%;
     display: flex;
     align-items: center;
-    background-color: #eeeeee;
-    border-radius: 15px;
-    box-shadow: 0 0 3px var(--background);
-    margin: 10px;
   }
 
-  .contact__form span input,
-  .contact__form span textarea {
-    background-color: transparent;
-    border-color: transparent;
-    width: 100%;
+  .contact__form__info {
+    width: 80%;
+    height: 27%;
+    border: transparent;
     resize: none;
-    font-size: 20px;
-    color: #393e46;
-    font-family: normal;
-    padding: 10px;
-    overflow: auto;
-  }
-
-  .contact__form span input::placeholder,
-  .contact__form span textarea::placeholder {
-    font-family: bold;
-    color: #393e46aa;
-  }
-
-  .contact__form span textarea {
-    padding-top: 40px;
-  }
-
-  .contact__form__name {
-    width: 400px;
-    height: 60px;
   }
 
   .contact__form__send {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20vh;
-    border-radius: 100%;
-    transition: transform 0.1s;
+    width: 22%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Contact INPUTS/TEXTAREA */
+
+  .contact__form__name input,
+  .contact__form__email input {
+    width: 100%;
+    height: 100%;
+    color: #666666;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 3%;
+    font-family: bold;
+    font-size: 1.2rem;
+  }
+
+  .contact__form__info {
+    font-family: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #666666;
+  }
+
+  .contact__form__send input {
+    width: 21%;
+    height: 12%;
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  /* Contact IMAGES */
+
+  .contact__form__name img,
+  .contact__form__email img {
+    width: 2.3rem;
+    height: auto;
+    margin-left: 3%;
   }
 
   .contact__form__send img {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    z-index: 100;
-  }
-
-  #contact__form__send {
-    position: absolute;
-    z-index: 200;
-    width: 70px;
-    height: 70px;
-    transition: transform 0.1s;
-  }
-
-  .contact__form__send:hover,
-  #contact__form__send:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-
-  #contact__form__name,
-  #contact__form__email,
-  #contact__form__info {
-    width: 40vw;
+    width: 3.8rem;
+    height: auto;
   }
 
   /* Games ======================================================= */
   #games {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 300vh;
     overflow-y: scroll;
   }
 
@@ -672,14 +652,14 @@
   /* Footer =======================================================  */
   #footer {
     position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    z-index: 1000;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 15vh;
-    background-color: var(--background);
-    z-index: 1000;
-    margin-top: 85vh;
     box-shadow: 1px 1px 10px var(--background);
   }
 
@@ -691,12 +671,12 @@
   }
 
   .footer__media {
-    margin: 1.5% 1% 0 1%;
+    margin: 1.5% 2% 0 2%;
   }
 
   /* Home =======================================================  */
   #home {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -768,13 +748,12 @@
 
   /* About =======================================================  */
   #about {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 100vh;
     overflow-y: scroll;
   }
 
@@ -808,108 +787,111 @@
 
   /* Contact =======================================================  */
   #contact {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin-top: 200vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact__form {
+    width: 40%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    align-self: center;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 60vh;
-    background-color: #fff;
+    gap: 4vh;
   }
 
-  .contact__form h2 {
-    font-size: 0;
+  /* Contact WRAPPERS */
+
+  .contact__form__name,
+  .contact__form__email,
+  .contact__form__info,
+  .contact__form__send {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #0005;
   }
 
-  .contact__form img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-  }
-
-  .contact__form span {
+  .contact__form__name,
+  .contact__form__email {
+    width: 80%;
+    height: 10%;
     display: flex;
     align-items: center;
-    background-color: #eeeeee;
-    border-radius: 15px;
-    box-shadow: 0 0 3px var(--background);
-    margin: 10px;
   }
 
-  .contact__form span input,
-  .contact__form span textarea {
-    background-color: transparent;
-    border-color: transparent;
-    width: 100%;
+  .contact__form__info {
+    width: 80%;
+    height: 27%;
+    border: transparent;
     resize: none;
-    font-size: 20px;
-    color: #393e46;
-    font-family: normal;
-    padding: 10px;
-    overflow: auto;
-  }
-
-  .contact__form span input::placeholder,
-  .contact__form span textarea::placeholder {
-    font-family: bold;
-    color: #393e46aa;
-  }
-
-  .contact__form span textarea {
-    padding-top: 40px;
-  }
-
-  .contact__form__name {
-    width: 400px;
-    height: 60px;
   }
 
   .contact__form__send {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20vh;
-    border-radius: 100%;
+    width: 22%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Contact INPUTS/TEXTAREA */
+
+  .contact__form__name input,
+  .contact__form__email input {
+    width: 100%;
+    height: 100%;
+    color: #666666;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 3%;
+    font-family: bold;
+    font-size: 1.2rem;
+  }
+
+  .contact__form__info {
+    font-family: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #666666;
+  }
+
+  .contact__form__send input {
+    width: 21%;
+    height: 12%;
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  /* Contact IMAGES */
+
+  .contact__form__name img,
+  .contact__form__email img {
+    width: 2.3rem;
+    height: auto;
+    margin-left: 3%;
   }
 
   .contact__form__send img {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    z-index: 100;
-  }
-
-  #contact__form__send {
-    position: absolute;
-    z-index: 200;
-    width: 70px;
-    height: 70px;
-  }
-
-  #contact__form__name,
-  #contact__form__email,
-  #contact__form__info {
-    width: 60vw;
+    width: 3.8rem;
+    height: auto;
   }
 
   /* Games ======================================================= */
   #games {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 300vh;
     overflow-y: scroll;
   }
 
@@ -984,14 +966,14 @@
   /* Footer =======================================================  */
   #footer {
     position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    z-index: 1000;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 15vh;
-    background-color: var(--background);
-    z-index: 1000;
-    margin-top: 85vh;
     box-shadow: 1px 1px 10px var(--background);
   }
 
@@ -1003,12 +985,12 @@
   }
 
   .footer__media {
-    margin: 1.5% 1% 0 1%;
+    margin: 1.5% 2% 0 2%;
   }
 
   /* Home =======================================================  */
   #home {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -1080,14 +1062,13 @@
 
   /* About =======================================================  */
   #about {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 100vh;
     overflow-y: scroll;
   }
 
@@ -1121,108 +1102,111 @@
 
   /* Contact =======================================================  */
   #contact {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin-top: 200vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact__form {
+    width: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    align-self: center;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 60vh;
-    background-color: #fff;
+    gap: 4vh;
   }
 
-  .contact__form h2 {
-    font-size: 0;
+  /* Contact WRAPPERS */
+
+  .contact__form__name,
+  .contact__form__email,
+  .contact__form__info,
+  .contact__form__send {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #0005;
   }
 
-  .contact__form img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-  }
-
-  .contact__form span {
+  .contact__form__name,
+  .contact__form__email {
+    width: 80%;
+    height: 10%;
     display: flex;
     align-items: center;
-    background-color: #eeeeee;
-    border-radius: 15px;
-    box-shadow: 0 0 3px var(--background);
-    margin: 10px;
   }
 
-  .contact__form span input,
-  .contact__form span textarea {
-    background-color: transparent;
-    border-color: transparent;
-    width: 100%;
+  .contact__form__info {
+    width: 80%;
+    height: 27%;
+    border: transparent;
     resize: none;
-    font-size: 20px;
-    color: #393e46;
-    font-family: normal;
-    padding: 10px;
-    overflow: auto;
-  }
-
-  .contact__form span input::placeholder,
-  .contact__form span textarea::placeholder {
-    font-family: bold;
-    color: #393e46aa;
-  }
-
-  .contact__form span textarea {
-    padding-top: 40px;
-  }
-
-  .contact__form__name {
-    width: 400px;
-    height: 60px;
   }
 
   .contact__form__send {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20vh;
-    border-radius: 100%;
+    width: 22%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Contact INPUTS/TEXTAREA */
+
+  .contact__form__name input,
+  .contact__form__email input {
+    width: 100%;
+    height: 100%;
+    color: #666666;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 3%;
+    font-family: bold;
+    font-size: 1.2rem;
+  }
+
+  .contact__form__info {
+    font-family: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #666666;
+  }
+
+  .contact__form__send input {
+    width: 21%;
+    height: 12%;
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  /* Contact IMAGES */
+
+  .contact__form__name img,
+  .contact__form__email img {
+    width: 2.3rem;
+    height: auto;
+    margin-left: 3%;
   }
 
   .contact__form__send img {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    z-index: 100;
-  }
-
-  #contact__form__send {
-    position: absolute;
-    z-index: 200;
-    width: 70px;
-    height: 70px;
-  }
-
-  #contact__form__name,
-  #contact__form__email,
-  #contact__form__info {
-    width: 70vw;
+    width: 3.8rem;
+    height: auto;
   }
 
   /* Games ======================================================= */
   #games {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-top: 300vh;
     overflow-y: scroll;
   }
 
@@ -1439,91 +1423,94 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    align-items: center;
   }
 
   .contact__form {
+    width: 100%;
+    height: 70%; /*70%*/
     display: flex;
     flex-direction: column;
-    align-self: center;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 60vh;
-    background-color: #fff;
+    gap: 4vh;
   }
 
-  .contact__form h2 {
-    font-size: 0;
+  /* Contact WRAPPERS */
+
+  .contact__form__name,
+  .contact__form__email,
+  .contact__form__info,
+  .contact__form__send {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #0005;
   }
 
-  .contact__form img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-  }
-
-  .contact__form span {
+  .contact__form__name,
+  .contact__form__email {
+    width: 80%;
+    height: 10%;
     display: flex;
     align-items: center;
-    background-color: #eeeeee;
-    border-radius: 15px;
-    box-shadow: 0 0 3px var(--background);
-    margin: 10px;
   }
 
-  .contact__form span input,
-  .contact__form span textarea {
-    background-color: transparent;
-    border-color: transparent;
-    width: 100%;
+  .contact__form__info {
+    width: 80%;
+    height: 27%;
+    border: transparent;
     resize: none;
-    font-size: 20px;
-    color: #393e46;
-    font-family: normal;
-    padding: 10px;
-    overflow: auto;
-  }
-
-  .contact__form span input::placeholder,
-  .contact__form span textarea::placeholder {
-    font-family: bold;
-    color: #393e46aa;
-  }
-
-  .contact__form span textarea {
-    padding-top: 40px;
-  }
-
-  .contact__form__name {
-    width: 400px;
-    height: 60px;
   }
 
   .contact__form__send {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20vh;
-    border-radius: 100%;
+    width: 22%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Contact INPUTS/TEXTAREA */
+
+  .contact__form__name input,
+  .contact__form__email input {
+    width: 100%;
+    height: 100%;
+    color: #666666;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 3%;
+    font-family: bold;
+    font-size: 1.2rem;
+  }
+
+  .contact__form__info {
+    font-family: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #666666;
+  }
+
+  .contact__form__send input {
+    width: 21%;
+    height: 12%;
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  /* Contact IMAGES */
+
+  .contact__form__name img,
+  .contact__form__email img {
+    width: 2.3rem;
+    height: auto;
+    margin-left: 3%;
   }
 
   .contact__form__send img {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    z-index: 100;
-  }
-
-  #contact__form__send {
-    position: absolute;
-    z-index: 200;
-    width: 70px;
-    height: 70px;
-  }
-
-  #contact__form__name,
-  #contact__form__email,
-  #contact__form__info {
-    width: 80vw;
+    width: 3.8rem;
+    height: auto;
   }
 
   /* Games ======================================================= */
