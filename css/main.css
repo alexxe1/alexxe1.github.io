@@ -55,7 +55,7 @@
   }
 
   .footer__media {
-    margin: 1.5% 2% 0 2%;
+    margin: 1.5% 0% 0 1%;
   }
 
   /* Home =======================================================  */
@@ -218,6 +218,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s;
   }
 
   /* Contact INPUTS/TEXTAREA */
@@ -231,22 +232,28 @@
     border-color: transparent;
     margin-left: 3%;
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .contact__form__info {
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 10px;
     color: #666666;
   }
 
   .contact__form__send input {
-    width: 21%;
+    width: 8%;
     height: 12%;
     position: absolute;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
+  }
+
+  .contact__form__send:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
   /* Contact IMAGES */
@@ -259,7 +266,7 @@
   }
 
   .contact__form__send img {
-    width: 3.8rem;
+    width: 5rem;
     height: auto;
   }
 
