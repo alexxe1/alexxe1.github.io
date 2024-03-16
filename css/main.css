@@ -6,25 +6,18 @@
     display: flex;
     position: fixed;
     background-color: var(--background);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
     box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .nav__games,
-  .nav__about {
-    z-index: -1000;
-    font-size: 0;
-    position: absolute;
-    color: transparent;
+    gap: 4vw;
+    top: 0;
   }
 
   .nav__image {
-    width: 9rem;
-    margin-top: -10%;
+    width: 8rem;
     height: auto;
     transition: transform 0.1s;
   }
@@ -33,29 +26,9 @@
     transform: scale(1.1);
   }
 
-  /* Footer =======================================================  */
-  #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 15vh;
-    z-index: 1000;
-    background-color: var(--background);
+  .nav__media {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .footer__text {
-    color: transparent;
-    position: absolute;
-    font-size: 0;
-    z-index: -1000;
-  }
-
-  .footer__media {
-    margin: 1.5% 0% 0 1%;
+    gap: 1vw;
   }
 
   /* Home =======================================================  */
@@ -65,6 +38,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    align-items: center;
   }
 
   .home__buttons a:link,
@@ -127,11 +101,11 @@
   #about {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .about__image {
@@ -153,16 +127,20 @@
     font-size: 5vw;
     font-family: bold;
     margin: 0;
-    color: var(--background);
+    color: var(--cyan);
   }
 
   .about__info p {
-    width: 99%;
-    font-size: 1.6rem;
+    width: 100%;
+    font-size: 2rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
+  }
+
+  .about__info b {
+    font-size: 2.2rem;
   }
 
   /* Contact =======================================================  */
@@ -301,7 +279,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
+    width: 90%;
     height: 100vh;
   }
 
@@ -327,25 +305,18 @@
     display: flex;
     position: fixed;
     background-color: var(--background);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
     box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .nav__games,
-  .nav__about {
-    z-index: -1000;
-    font-size: 0;
-    position: absolute;
-    color: transparent;
+    gap: 5vw;
+    top: 0;
   }
 
   .nav__image {
-    width: 7.5rem;
-    margin-top: -10%;
+    width: 8rem;
     height: auto;
     transition: transform 0.1s;
   }
@@ -354,29 +325,9 @@
     transform: scale(1.1);
   }
 
-  /* Footer =======================================================  */
-  #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 15vh;
-    z-index: 1000;
-    background-color: var(--background);
+  .nav__media {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .footer__text {
-    color: transparent;
-    position: absolute;
-    font-size: 0;
-    z-index: -1000;
-  }
-
-  .footer__media {
-    margin: 1.5% 2% 0 2%;
+    gap: 1.5vw;
   }
 
   /* Home =======================================================  */
@@ -386,6 +337,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    align-items: center;
   }
 
   .home__buttons a:link,
@@ -408,11 +360,9 @@
   .home__buttons__about,
   .home__buttons__games {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row-reverse;
     width: 28%;
-    height: 28%;
+    height: 34%;
     background-color: var(--background);
     border-radius: 20px;
     transition: transform 0.1s;
@@ -428,36 +378,44 @@
   .home__buttons__about span,
   .home__buttons__games span {
     color: #fff;
-    font-size: 3rem;
+    width: 100%;
+    padding-left: 2vw;
+    font-size: 4rem;
     font-family: normal;
+    align-self: flex-end;
+    justify-self: start;
+    text-align: left;
   }
 
   .home__buttons__contact img,
   .home__buttons__about img,
   .home__buttons__games img {
-    width: 6em;
-    height: auto;
+    position: absolute;
+    margin: 1vw;
+    width: 9em;
+    height: 9em;
   }
 
   /* About =======================================================  */
   #about {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .about__image {
     width: 20em;
     height: auto;
+    filter: drop-shadow(0 0 1px #000);
   }
 
   .about__info {
+    width: 40vw;
     margin-left: 5vw;
-    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -465,19 +423,23 @@
   }
 
   .about__info h2 {
-    font-size: 7vw;
+    font-size: 5vw;
     font-family: bold;
     margin: 0;
-    color: var(--background);
+    color: var(--cyan);
   }
 
   .about__info p {
-    width: 99%;
-    font-size: 1.6rem;
+    width: 100%;
+    font-size: 1.9rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
+  }
+
+  .about__info b {
+    font-size: 2.1rem;
   }
 
   /* Contact =======================================================  */
@@ -492,7 +454,7 @@
   }
 
   .contact__form {
-    width: 40%;
+    width: 70%;
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -533,6 +495,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s;
   }
 
   /* Contact INPUTS/TEXTAREA */
@@ -546,22 +509,28 @@
     border-color: transparent;
     margin-left: 3%;
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .contact__form__info {
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 10px;
     color: #666666;
   }
 
   .contact__form__send input {
-    width: 21%;
+    width: 8%;
     height: 12%;
     position: absolute;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
+  }
+
+  .contact__form__send:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
   /* Contact IMAGES */
@@ -574,7 +543,7 @@
   }
 
   .contact__form__send img {
-    width: 3.8rem;
+    width: 5rem;
     height: auto;
   }
 
@@ -582,6 +551,7 @@
   #games {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
@@ -592,14 +562,14 @@
   #games img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
   }
 
   #games h3 {
     font-family: bold;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 3%;
     font-size: 3rem;
   }
 
@@ -608,13 +578,14 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
+    width: 90%;
     height: 100vh;
   }
 
   .game {
-    width: 35%;
-    height: 35%;
+    width: 40%;
+    aspect-ratio: 16/9;
+    height: 30%;
     background-color: #000;
     border-radius: 10px;
     box-shadow: 0 0 8px var(--background);
@@ -634,51 +605,29 @@
     display: flex;
     position: fixed;
     background-color: var(--background);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
     box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .nav__games,
-  .nav__about {
-    z-index: -1000;
-    font-size: 0;
-    position: absolute;
-    color: transparent;
+    gap: 5vw;
+    top: 0;
   }
 
   .nav__image {
-    width: 6.5rem;
-    margin-top: -10%;
+    width: 8rem;
     height: auto;
+    transition: transform 0.1s;
   }
 
-  /* Footer =======================================================  */
-  #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 15vh;
-    z-index: 1000;
-    background-color: var(--background);
+  .nav__image:hover {
+    transform: scale(1.1);
+  }
+
+  .nav__media {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .footer__text {
-    color: transparent;
-    position: absolute;
-    font-size: 0;
-    z-index: -1000;
-  }
-
-  .footer__media {
-    margin: 1.5% 2% 0 2%;
+    gap: 1.5vw;
   }
 
   /* Home =======================================================  */
@@ -688,6 +637,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    align-items: center;
   }
 
   .home__buttons a:link,
@@ -699,8 +649,11 @@
 
   .home__buttons {
     display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    align-items: center;
     justify-content: space-evenly;
-    margin-top: 25vh;
     flex-wrap: wrap;
   }
 
@@ -709,67 +662,68 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-    height: 20vh;
+    flex-direction: column;
+    width: 38%;
     background-color: var(--background);
     border-radius: 20px;
-    text-align: center;
-  }
-
-  .home__buttons__contact span,
-  .home__buttons__about span {
-    color: #fff;
-    font-size: 1.8rem;
-    font-family: normal;
-    margin-left: 1vw;
-  }
-
-  .home__buttons__contact img,
-  .home__buttons__about img {
-    width: 6em;
-    height: 6em;
+    transition: transform 0.1s;
+    margin-bottom: 10vh;
+    padding: 2vh;
   }
 
   .home__buttons__games {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85vw;
-    height: 20vh;
+    flex-direction: column;
+    width: 84%;
     background-color: var(--background);
     border-radius: 20px;
-    margin-top: -20vh;
+    transition: transform 0.1s;
+    padding: 2vh;
   }
 
+  .home__buttons__contact:hover,
+  .home__buttons__about:hover,
+  .home__buttons__games:hover {
+    transform: scale(1.1);
+  }
+
+  .home__buttons__contact span,
+  .home__buttons__about span,
   .home__buttons__games span {
     color: #fff;
+    width: 100%;
+    font-size: 3.8rem;
     font-family: normal;
-    font-size: 3rem;
-    margin-left: 2vw;
+    align-self: flex-end;
+    justify-self: start;
+    text-align: center;
   }
 
+  .home__buttons__contact img,
+  .home__buttons__about img,
   .home__buttons__games img {
-    width: 6em;
-    height: 6em;
+    width: 8em;
   }
 
   /* About =======================================================  */
   #about {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .about__image {
-    width: 0;
+    display: none;
   }
 
   .about__info {
-    width: 70vw;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -780,16 +734,20 @@
     font-size: 10vw;
     font-family: bold;
     margin: 0;
-    color: var(--background);
+    color: var(--cyan);
   }
 
   .about__info p {
-    width: 99%;
-    font-size: 1.6rem;
+    width: 100%;
+    font-size: 1.9rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
+  }
+
+  .about__info b {
+    font-size: 2.1rem;
   }
 
   /* Contact =======================================================  */
@@ -804,7 +762,7 @@
   }
 
   .contact__form {
-    width: 40%;
+    width: 80%;
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -845,6 +803,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s;
   }
 
   /* Contact INPUTS/TEXTAREA */
@@ -858,22 +817,28 @@
     border-color: transparent;
     margin-left: 3%;
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .contact__form__info {
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 10px;
     color: #666666;
   }
 
   .contact__form__send input {
-    width: 21%;
+    width: 8%;
     height: 12%;
     position: absolute;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
+  }
+
+  .contact__form__send:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
   /* Contact IMAGES */
@@ -886,7 +851,7 @@
   }
 
   .contact__form__send img {
-    width: 3.8rem;
+    width: 5rem;
     height: auto;
   }
 
@@ -894,7 +859,6 @@
   #games {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
@@ -902,37 +866,39 @@
     overflow-y: scroll;
   }
 
-  #games img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-
-  #games h3 {
-    font-family: bold;
-    text-align: center;
-    margin-top: 3%;
-    font-size: 2rem;
-  }
-
   .games__container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    margin-top: 20vh;
+    flex-wrap: wrap;
   }
 
   .game {
-    width: 30%;
+    aspect-ratio: 16/9;
     height: 30%;
     background-color: #000;
     border-radius: 10px;
     box-shadow: 0 0 8px var(--background);
     transition: transform 0.1s;
+  }
+
+  .game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+  }
+
+  .game h3 {
+    font-family: bold;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3rem;
   }
 
   .game:hover {
@@ -948,51 +914,25 @@
     display: flex;
     position: fixed;
     background-color: var(--background);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
     box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .nav__games,
-  .nav__about {
-    z-index: -1000;
-    font-size: 0;
-    position: absolute;
-    color: transparent;
+    gap: 5vw;
+    top: 0;
   }
 
   .nav__image {
-    width: 6.5rem;
-    margin-top: -10%;
+    width: 8rem;
     height: auto;
+    transition: transform 0.1s;
   }
 
-  /* Footer =======================================================  */
-  #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 15vh;
-    z-index: 1000;
-    background-color: var(--background);
+  .nav__media {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .footer__text {
-    color: transparent;
-    position: absolute;
-    font-size: 0;
-    z-index: -1000;
-  }
-
-  .footer__media {
-    margin: 1.5% 2% 0 2%;
+    gap: 1.5vw;
   }
 
   /* Home =======================================================  */
@@ -1002,6 +942,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    align-items: center;
   }
 
   .home__buttons a:link,
@@ -1013,8 +954,11 @@
 
   .home__buttons {
     display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    align-items: center;
     justify-content: space-evenly;
-    margin-top: 25vh;
     flex-wrap: wrap;
   }
 
@@ -1023,68 +967,68 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-    height: 20vh;
+    flex-direction: column;
+    width: 38%;
     background-color: var(--background);
     border-radius: 20px;
-    text-align: center;
-  }
-
-  .home__buttons__contact span,
-  .home__buttons__about span {
-    color: #fff;
-    font-size: 1.8rem;
-    font-family: normal;
-    margin-left: 1vw;
-  }
-
-  .home__buttons__contact img,
-  .home__buttons__about img {
-    width: 6em;
-    height: 6em;
+    transition: transform 0.1s;
+    margin-bottom: 10vh;
+    padding: 2vh;
   }
 
   .home__buttons__games {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85vw;
-    height: 20vh;
+    flex-direction: column;
+    width: 84%;
     background-color: var(--background);
     border-radius: 20px;
-    margin-top: -20vh;
+    transition: transform 0.1s;
+    padding: 2vh;
   }
 
+  .home__buttons__contact:hover,
+  .home__buttons__about:hover,
+  .home__buttons__games:hover {
+    transform: scale(1.1);
+  }
+
+  .home__buttons__contact span,
+  .home__buttons__about span,
   .home__buttons__games span {
     color: #fff;
+    width: 100%;
+    font-size: 2.7rem;
     font-family: normal;
-    font-size: 3rem;
-    margin-left: 2vw;
+    align-self: flex-end;
+    justify-self: start;
+    text-align: center;
   }
 
+  .home__buttons__contact img,
+  .home__buttons__about img,
   .home__buttons__games img {
-    width: 6em;
-    height: 6em;
+    width: 8em;
   }
 
   /* About =======================================================  */
   #about {
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .about__image {
-    width: 0;
+    display: none;
   }
 
   .about__info {
-    width: 70vw;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1095,16 +1039,20 @@
     font-size: 10vw;
     font-family: bold;
     margin: 0;
-    color: var(--background);
+    color: var(--cyan);
   }
 
   .about__info p {
-    width: 99%;
-    font-size: 1.6rem;
+    width: 100%;
+    font-size: 1.9rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
+  }
+
+  .about__info b {
+    font-size: 2.1rem;
   }
 
   /* Contact =======================================================  */
@@ -1119,7 +1067,7 @@
   }
 
   .contact__form {
-    width: 80%;
+    width: 100%;
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -1160,6 +1108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s;
   }
 
   /* Contact INPUTS/TEXTAREA */
@@ -1173,22 +1122,23 @@
     border-color: transparent;
     margin-left: 3%;
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .contact__form__info {
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 10px;
     color: #666666;
   }
 
   .contact__form__send input {
-    width: 21%;
+    width: 8%;
     height: 12%;
     position: absolute;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
   }
 
   /* Contact IMAGES */
@@ -1201,7 +1151,7 @@
   }
 
   .contact__form__send img {
-    width: 3.8rem;
+    width: 5rem;
     height: auto;
   }
 
@@ -1209,7 +1159,6 @@
   #games {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
@@ -1217,39 +1166,40 @@
     overflow-y: scroll;
   }
 
-  #games img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-
-  #games h3 {
-    font-family: bold;
-    text-align: center;
-    margin-top: 2%;
-    font-size: 2rem;
-  }
-
   .games__container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    margin-top: 8vh;
-    margin-bottom: 25vh;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    margin-top: 20vh;
+    flex-wrap: wrap;
   }
 
   .game {
-    width: 40%;
+    aspect-ratio: 16/9;
+    width: 80%;
     height: 30%;
     background-color: #000;
     border-radius: 10px;
     box-shadow: 0 0 8px var(--background);
     transition: transform 0.1s;
+  }
+
+  .game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+  }
+
+  .game h3 {
+    font-family: bold;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3rem;
   }
 
   .game:hover {
@@ -1265,51 +1215,24 @@
     display: flex;
     position: fixed;
     background-color: var(--background);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 1000;
     width: 100vw;
     height: 18vh;
     box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .nav__games,
-  .nav__about {
-    z-index: -1000;
-    font-size: 0;
-    position: absolute;
-    color: transparent;
+    gap: 5vw;
+    top: 0;
   }
 
   .nav__image {
-    width: 6.5rem;
-    margin-top: -10%;
+    width: 7rem;
     height: auto;
+    transition: transform 0.1s;
   }
 
-  /* Footer =======================================================  */
-  #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 15vh;
-    z-index: 1000;
-    background-color: var(--background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px var(--background);
-  }
-
-  .footer__text {
-    color: transparent;
-    position: absolute;
-    font-size: 0;
-    z-index: -1000;
-  }
-
-  .footer__media {
-    margin: 1.5% 2% 0 2%;
+  .nav__media {
+    display: none;
   }
 
   /* Home =======================================================  */
@@ -1319,6 +1242,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    align-items: center;
   }
 
   .home__buttons a:link,
@@ -1330,77 +1254,73 @@
 
   .home__buttons {
     display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 22vh;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 25vh;
     flex-wrap: wrap;
   }
 
   .home__buttons__contact,
-  .home__buttons__about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    height: 20vh;
-    background-color: var(--background);
-    border-radius: 20px;
-    text-align: center;
-  }
-
-  .home__buttons__contact span,
-  .home__buttons__about span {
-    position: absolute;
-    color: transparent;
-    font-size: 1.8rem;
-    font-family: normal;
-  }
-
-  .home__buttons__contact img,
-  .home__buttons__about img {
-    width: 6em;
-    height: 6em;
-  }
-
+  .home__buttons__about,
   .home__buttons__games {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85vw;
-    height: 20vh;
+    flex-direction: column;
+    width: 80%;
+    height: 30%;
     background-color: var(--background);
     border-radius: 20px;
-    margin-top: -20vh;
+    transition: transform 0.1s;
+    margin-bottom: 5vh;
+    padding: 2vh;
   }
 
+  .home__buttons__contact:hover,
+  .home__buttons__about:hover,
+  .home__buttons__games:hover {
+    transform: scale(1.1);
+  }
+
+  .home__buttons__contact span,
+  .home__buttons__about span,
   .home__buttons__games span {
-    position: absolute;
-    color: transparent;
+    color: #fff;
+    width: 100%;
+    font-size: 2rem;
     font-family: normal;
-    font-size: 3rem;
+    align-self: flex-end;
+    justify-self: start;
+    text-align: center;
   }
 
+  .home__buttons__contact img,
+  .home__buttons__about img,
   .home__buttons__games img {
-    width: 6em;
-    height: 6em;
+    width: 5em;
   }
 
   /* About =======================================================  */
   #about {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
   }
 
   .about__image {
-    width: 0;
+    display: none;
   }
 
   .about__info {
-    width: 95vw;
+    width: 99%;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1408,19 +1328,34 @@
   }
 
   .about__info h2 {
-    font-size: 10vw;
-    font-family: bold;
-    margin: 0;
-    color: var(--background);
+    display: none;
   }
 
   .about__info p {
-    width: 99%;
-    font-size: 1.6rem;
+    width: 100%;
+    font-size: 1.4rem;
     font-family: normal;
     margin: 0;
     line-height: 6vh;
     text-align: center;
+  }
+
+  .about__info b {
+    font-size: 1.5rem;
+  }
+
+  .about__media {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background);
+    padding: 5%;
+    margin-top: 2vh;
+    box-sizing: border-box;
+    border-radius: 10px;
   }
 
   /* Contact =======================================================  */
@@ -1431,11 +1366,12 @@
     height: 100vh;
     overflow: hidden;
     align-items: center;
+    justify-content: center;
   }
 
   .contact__form {
     width: 100%;
-    height: 70%; /*70%*/
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1475,6 +1411,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s;
   }
 
   /* Contact INPUTS/TEXTAREA */
@@ -1488,22 +1425,23 @@
     border-color: transparent;
     margin-left: 3%;
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .contact__form__info {
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 10px;
     color: #666666;
   }
 
   .contact__form__send input {
-    width: 21%;
+    width: 8%;
     height: 12%;
     position: absolute;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
   }
 
   /* Contact IMAGES */
@@ -1516,7 +1454,7 @@
   }
 
   .contact__form__send img {
-    width: 3.8rem;
+    width: 5rem;
     height: auto;
   }
 
@@ -1524,8 +1462,6 @@
   #games {
     position: relative;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
@@ -1533,40 +1469,43 @@
     overflow-y: scroll;
   }
 
-  #games img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  #games h3 {
-    font-family: bold;
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-  }
-
   .games__container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    margin-top: 28vh;
-    margin-bottom: 15vh;
-    width: 100vw;
-    min-height: 100vh;
-    height: auto;
-    overflow-y: scroll;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20vh;
+    flex-wrap: wrap;
   }
 
   .game {
-    position: relative;
+    aspect-ratio: 16/9;
     width: 80%;
-    height: 150px;
+    height: 30%;
     background-color: #000;
     border-radius: 10px;
     box-shadow: 0 0 8px var(--background);
+    transition: transform 0.1s;
+  }
+
+  .game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+  }
+
+  .game h3 {
+    font-family: bold;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3rem;
+  }
+
+  .game:hover {
+    transform: scale(1.1);
   }
 }
