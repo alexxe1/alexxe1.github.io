@@ -749,15 +749,10 @@ body {
 
   .slider-container__slider img,
   .slider-container__slider iframe {
-    border-radius: 0px;
-    width: 103.2%;
+    width: 100vw;
     aspect-ratio: 16/9;
     height: auto;
     display: none;
-  }
-
-  .slider-container__slider iframe {
-    width: 110%;
   }
 
   .slider-container button {
