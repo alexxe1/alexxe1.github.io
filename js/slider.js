@@ -1,4 +1,4 @@
-const slider = document.querySelectorAll(".slider-container__slider img");
+const slider = document.querySelectorAll(".slideable");
 let slideIndex = 0;
 let intervalID = null;
 
