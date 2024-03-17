@@ -682,7 +682,6 @@ body {
   }
 
   .slider-container__slider img {
-    border-radius: 10px;
     width: 100%;
     aspect-ratio: 16/9;
     height: auto;
